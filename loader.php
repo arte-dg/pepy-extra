@@ -4,7 +4,7 @@
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
  * Plugin URI: https://pepy.link/extra/
  * Author: Douglas G Alves
- * Version: 0.2
+ * Version: 0.3
  * Author URI: https://pepy.link/sobre
  *
  * Text Domain: pepy-extra
@@ -63,9 +63,3 @@ function vapfem_load_textdomain() {
     load_plugin_textdomain( 'vapfem', false, VAPFEM_DIR_PRO . '/languages/' );
 }
 add_action( 'plugins_loaded', 'vapfem_load_textdomain' );
-
-
-//updates
-
-require_once('wp-updates-plugin.php');
-new WPUpdatesPluginUpdater_2208( 'http://wp-updates.com/api/2/plugin', plugin_basename(__FILE__));

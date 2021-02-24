@@ -70,16 +70,16 @@ class StaxWidgets {
 //			'slug'  => 'pepy-el-info-box'
 //		];
 
-		$widgets['interval-image'] = [
-			'scope' => 'IntervalImage',
-			'name'  => 'Interval Image',
-			'slug'  => 'pepy-el-interval-image'
+//		$widgets['interval-image'] = [
+//			'scope' => 'IntervalImage',
+//			'name'  => 'Interval Image',
+//			'slug'  => 'pepy-el-interval-image'
 		];
 
-		$widgets['image-mask'] = [
-			'scope' => 'ImageMask',
-			'name'  => 'Image Mask',
-			'slug'  => 'pepy-el-image-mask'
+//		$widgets['image-mask'] = [
+//			'scope' => 'ImageMask',
+//			'name'  => 'Image Mask',
+//			'slug'  => 'pepy-el-image-mask'
 		];
 
 		$widgets['scroll-top'] = [

@@ -4,7 +4,7 @@
         <div class="ste-container ste-mx-auto">
 
                 <div class="ste-text-left">
-                    <h1 class="ste-block ste-leading-normal ste-my-0"><span class="ste-font-light">Bem-vindo ao </span> LucraPage$<span style="font-size: 20px; font-weight: 300;">beta </span></h1>
+                    <h1 class="ste-block ste-leading-normal ste-my-0"><span class="ste-font-light">Bem-vindo ao </span> pepyExtra<span style="font-size: 20px; font-weight: 300;">beta </span></h1>
                     <div class="ste-font-medium ste-text-lg ste-text-gray-600">Elementos para otimizar a conversão</div>
                 </div>
             
