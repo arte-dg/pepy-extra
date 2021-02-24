@@ -1,0 +1,158 @@
+.stx-title-wrapper {
+  .stx-title, .stx-subtitle {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+
+    > span {
+      display: inline-block;
+
+      &.stx-line-before {
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 1px;
+          width: 20px;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          background: #000;
+          vertical-align: middle;
+        }
+      }
+
+      &.stx-line-after {
+        &:after {
+          content: '';
+          display: inline-block;
+          height: 1px;
+          width: 20px;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          background: #000;
+          vertical-align: middle;
+        }
+      }
+
+      &.stx-line-both {
+        &:before,
+        &:after {
+          content: '';
+          display: inline-block;
+          height: 1px;
+          width: 20px;
+          -ms-flex-positive: 1;
+          flex-grow: 1;
+          background: #000;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .stx-subtitle {
+    margin-top: 20px;
+  }
+
+  .stx-description {
+    p {
+      margin: 10px 0 0 0;
+      padding: 0;
+    }
+  }
+
+  &.stx-align-left {
+    text-align: left;
+  }
+
+  &.stx-align-center {
+    text-align: center;
+  }
+
+  &.stx-align-right {
+    text-align: right;
+  }
+
+  @media (max-width: 991px) {
+    &.stx-align-md-left {
+      text-align: left;
+    }
+
+    &.stx-align-md-center {
+      text-align: center;
+    }
+
+    &.stx-align-md-right {
+      text-align: right;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &.stx-align-sm-left {
+      text-align: left;
+    }
+
+    &.stx-align-sm-center {
+      text-align: center;
+    }
+
+    &.stx-align-sm-right {
+      text-align: right;
+    }
+  }
+
+  .stx-divider {
+    display: inline-block;
+    margin: 1em 0;
+
+    &:before {
+      content: "";
+      display: block;
+    }
+
+    &.stx-one-line {
+      align-items: center;
+
+      &:before {
+        height: 1px;
+        background: #000;
+      }
+    }
+
+    &.stx-glow {
+      align-items: center;
+
+      &:before {
+        height: 6px;
+        -webkit-filter: blur(5px);
+        border-radius: 5px;
+      }
+
+      &:before {
+        background: linear-gradient(to right, blue, hotpink);
+      }
+    }
+
+    &.stx-gradient {
+      &:before {
+        display: block;
+        height: 10px;
+        background: linear-gradient(to right, white, black);
+      }
+    }
+
+    &.stx-donotcross {
+      overflow: hidden;
+      background: hsl(50, 100%, 50%);
+      color: black;
+      height: 2em;
+      line-height: 2em;
+
+      &:before {
+        background: white;
+        padding: 50px 0;
+        height: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.elementor-widget-pepy-el-read-more {
+
+  .stx-read-more-toggle {
+    display: inline-block;
+    color: red;
+  }
+  .stx-read-less {
+    display: none;
+  }
+  .read-more-text {
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+  }
+
+  .stx-read-more-open {
+    .stx-read-less {
+      display: inline-block;
+    }
+    .read-more-text {
+      height: auto;
+      overflow: initial;
+      visibility: visible;
+      opacity: 1;
+    }
+    .stx-read-more {
+      display: none;
+    }
+  }
+
+  .stx-icon-right i {
+    float: right;
+    padding-left: 10px
+  }
+}
+

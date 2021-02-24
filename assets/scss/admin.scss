@@ -1,0 +1,27 @@
+@tailwind base;
+
+@tailwind components;
+
+.pepy-elementor-admin-page #contextual-help-link-wrap {
+  display: none !important;
+}
+
+.pepy-elementor-admin-page .pepy-main ul li {
+  margin-bottom: 0;
+}
+
+.pepy-elementor-admin-page .pepy-main #go-pro-rocket-icon {
+  width: 100px;
+  transform: rotate(-45deg);
+}
+
+.pepy-elementor-admin-page .pepy-main .rocket-flame {
+  transform-origin: 15px 37.5px;
+}
+
+.pepy-elementor-admin-page .pepy-main a:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+@tailwind utilities;

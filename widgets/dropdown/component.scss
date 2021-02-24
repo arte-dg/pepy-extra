@@ -1,0 +1,126 @@
+.stx-dropdown-wrapper {
+  display: inline-block;
+  position: relative;
+
+  .stx-dropdown-content-wrapper {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 10;
+
+    .stx-dropdown-content {
+      background: #fff;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: 1px solid #f3f3f3;
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 20px 0 0;
+        display: inline-block;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        li {
+          a {
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .stx-btn {
+    background-color: #5cb85c;
+    color: #fff;
+    display: inline-block;
+    fill: #fff;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s;
+    width: auto;
+
+    &:hover, &:visited, &:focus {
+      color: #fff;
+    }
+
+    .stx-btn-content-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .stx-btn-icon {
+        flex-grow: 0;
+
+        &.stx-icon-left {
+          margin-right: 5px;
+          order: 5;
+        }
+
+        &.stx-icon-right {
+          margin-left: 5px;
+          order: 15;
+        }
+      }
+
+      .stx-btn-text {
+        flex-grow: 1;
+        order: 10;
+        display: inline-block;
+      }
+    }
+
+    &.stx-btn-xs {
+      font-size: 13px;
+      padding: 10px 20px;
+      border-radius: 2px;
+    }
+
+    &.stx-btn-sm {
+      font-size: 15px;
+      padding: 12px 24px;
+      border-radius: 3px;
+    }
+
+    &.stx-btn-md {
+      font-size: 16px;
+      padding: 15px 30px;
+      border-radius: 4px;
+    }
+
+    &.stx-btn-lg {
+      font-size: 18px;
+      padding: 20px 40px;
+      border-radius: 5px;
+    }
+
+    &.stx-btn-xl {
+      font-size: 20px;
+      padding: 25px 50px;
+      border-radius: 6px;
+    }
+  }
+
+  .elementor-align-justify .stx-btn {
+    width: 100%;
+  }
+}
+
+.stx-trigger-hover {
+  .stx-dropdown-wrapper:hover {
+    .stx-dropdown-content-wrapper {
+      display: flex !important;
+    }
+  }
+}
+
+
+.elementor-element-editable {
+  .stx-dropdown-wrapper .stx-dropdown-content-wrapper {
+    display: flex !important;
+  }
+}
