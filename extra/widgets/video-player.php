@@ -16,7 +16,7 @@ class VAPFEM_Video_Player_Pro extends \Elementor\Widget_Base {
     }
 
     public function get_categories() {
-        return array( 'general' );
+        return array( 'pepy-elementor' );
     }
     
     public function get_script_depends() {

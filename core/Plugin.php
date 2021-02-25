@@ -38,12 +38,8 @@ class Plugin {
 
 		// Admin pages
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Base.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Dashboard.php';
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Widgets.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Plugins.php';
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Modules.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Templates.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Help.php';
 
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/Settings.php';
 
@@ -55,14 +51,7 @@ class Plugin {
 		// Extra
 		require_once PEPY_EXTRA_EXTRA_PATH . '/Rotate.php';
 
-		add_action( 'admin_footer', function () {/*
-			if ( isset( $_GET['page'] ) && strpos( $_GET['page'], PEPY_EXTRA_SLUG_PREFIX ) !== false ):
-				?>
-                <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
-                <script type="text/javascript">window.Beacon('init', '1b5e8cdd-8c69-499a-add2-c73fd404ed5e')</script>
-			<?php endif;
-
-			*/} );
+		add_action( 'admin_footer', function () {} );
 	}
 
 	/**

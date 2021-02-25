@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'PEPY_EXTRA_VERSION', '0.2' );
+define( 'PEPY_EXTRA_VERSION', '0.3' );
 define( 'PEPY_EXTRA_DOMAIN', 'pepy-extra' );
 define( 'PEPY_EXTRA_HOOK_PREFIX', 'pepy_el_' );
 define( 'PEPY_EXTRA_SLUG_PREFIX', 'pepy-elementor-' );

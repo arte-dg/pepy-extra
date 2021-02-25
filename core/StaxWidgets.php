@@ -64,40 +64,19 @@ class StaxWidgets {
 			'slug'  => 'pepy-el-read-more'
 		];
 
-//		$widgets['info-box'] = [
-//			'scope' => 'InfoBox',
-//			'name'  => 'Info Box',
-//			'slug'  => 'pepy-el-info-box'
-//		];
-
-//		$widgets['interval-image'] = [
-//			'scope' => 'IntervalImage',
-//			'name'  => 'Interval Image',
-//			'slug'  => 'pepy-el-interval-image'
-		];
-
-//		$widgets['image-mask'] = [
-//			'scope' => 'ImageMask',
-//			'name'  => 'Image Mask',
-//			'slug'  => 'pepy-el-image-mask'
-		];
 
 		$widgets['scroll-top'] = [
 			'scope' => 'ScrollTop',
 			'name'  => 'Scroll Top',
 			'slug'  => 'pepy-el-scroll-top'
 		];
-//
-//		$widgets['separator'] = [
-//			'scope' => 'Separator',
-//			'name'  => 'Separator',
-//			'slug'  => 'pepy-el-separator'
-//		];
 
-//		$widgets['testimonial'] = [
-//			'scope' => 'Testimonial',
-//			'slug'  => 'pepy-el-testimonial'
-//		];
+
+		$widgets['separator'] = [
+			'scope' => 'VideoPlayer',
+			'name'  => 'Video Player',
+			'slug'  => 'vapfem_video_player'
+			];
 
 		// Remove disabled widgets
 		if ( $active && ! $withStatus ) {
