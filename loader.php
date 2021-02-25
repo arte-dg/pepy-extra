@@ -2,11 +2,10 @@
 /**
  * Plugin Name: pepyExtra
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
- * Plugin URI: https://pepy.link/extra/
+ * Plugin URI: https://escolaelementor.com.br/extra
  * Author: Douglas G Alves
- * Version: 0.3
- * Author URI: https://pepy.link/sobre
- *
+ * Version: 0.3.1
+ * Author URI: https://escolaelementor.com.br/douglas
  * Text Domain: pepy-extra
  * Domain Path: /languages
  */
