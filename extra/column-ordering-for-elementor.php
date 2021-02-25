@@ -202,19 +202,7 @@ final class Elementor_Column_Order {
     }
     
     public static function add_controls( Element_Column $element ) {
-        $element->add_responsive_control(
-            '_elco_column_width',
-            [/*
-                'label'       => __( 'Custom Column Width', 'elementor-column-order' ),
-                'type'        => Controls_Manager::TEXT,
-                'separator'   => 'before',
-                'label_block' => true,
-                'description' => __( 'Here you can set the column width the way you always wanted to! e.g 250px, 50%, calc(100% - 250px)', 'elementor-column-order' ),
-                'selectors'   => [
-                    '{{WRAPPER}}.elementor-column' => 'width: {{VALUE}};',
-                ],*/
-            ]
-        );
+        
 
         $element->add_responsive_control(
             '_elco_column_order',
