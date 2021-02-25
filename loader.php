@@ -54,8 +54,8 @@ define( 'VAPFEM_DIR_PRO', dirname( __FILE__ ) );
 /**
  * Include all files
  */
-include_once( VAPFEM_DIR_PRO. '/extra/em-init.php');
-include_once( VAPFEM_DIR_PRO. '/extra/column-ordering-for-elementor.php');
+include_once( PEPY_EXTRA_PATH . '/extra/em-init.php');
+include_once( PEPY_EXTRA_PATH . '/extra/column-ordering-for-elementor.php');
 /**
  * Define text domain path
  */
