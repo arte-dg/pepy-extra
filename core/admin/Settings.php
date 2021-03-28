@@ -51,55 +51,10 @@ class Settings {
 		add_menu_page(
 			__( 'pepyExtra - Dashboard', 'pepy-addons-for-elementor' ),
 			__( 'pepyExtra', 'pepy-addons-for-elementor' ),
-			'manage_options',
+			'manage_options', 
 			'pepy-elementor-widgets',
 			[ $this, 'settings_template' ],
 
-		);
-
-		add_submenu_page(
-			Plugin::instance()->get_slug(),
-			__( 'STAX Elementor - Widgets', 'pepy-addons-for-elementor' ),
-			__( 'Widgets', 'pepy-addons-for-elementor' ),
-			'manage_options',
-			'pepy-elementor-widgets',
-			[ $this, 'settings_template' ]
-		);
-
-		add_submenu_page(
-			Plugin::instance()->get_slug(),
-			__( 'STAX Elementor - Plugins', 'pepy-addons-for-elementor' ),
-			__( 'Plugins', 'pepy-addons-for-elementor' ),
-			'manage_options',
-			'pepy-elementor-plugins',
-			[ $this, 'settings_template' ]
-		);
-
-		add_submenu_page(
-			Plugin::instance()->get_slug(),
-			__( 'STAX Elementor - Templates', 'pepy-addons-for-elementor' ),
-			__( 'Templates', 'pepy-addons-for-elementor' ),
-			'manage_options',
-			'pepy-elementor-templates',
-			[ $this, 'settings_template' ]
-		);
-
-		add_submenu_page(
-			Plugin::instance()->get_slug(),
-			__( 'STAX Elementor - Modules', 'pepy-addons-for-elementor' ),
-			__( 'Modules', 'pepy-addons-for-elementor' ),
-			'manage_options',
-			'pepy-elementor-modules',
-			[ $this, 'settings_template' ]
-		);
-
-		add_submenu_page(
-			Plugin::instance()->get_slug(),
-			__( 'STAX Elementor - Help', 'pepy-addons-for-elementor' ),
-			__( 'Help', 'pepy-addons-for-elementor' ),
-			'manage_options',
-			'pepy-elementor-help',
-			[ $this, 'settings_template' ]
 		);
 
 	}

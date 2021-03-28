@@ -24,7 +24,7 @@ class Component extends Base {
 	}
 
 	public function get_icon() {
-		return 'sq-icon-up sq-widget-label';
+    return 'eicon-arrow-up';
 	}
 
 	protected function _register_controls() {

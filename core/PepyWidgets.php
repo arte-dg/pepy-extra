@@ -159,33 +159,7 @@ class PepyWidgets {
 		return false;
 	}
 
-	/**
-	 * Enqueue Elementor Editor CSS
-	 */
-	public function editor_css() {
-		$this->enqueue_icons();
-
-		/*wp_enqueue_style(
-			'pepy-elementor-panel-label-style',
-			PEPY_EXTRA_ASSETS_URL . 'css/label.css',
-			null,
-			PEPY_EXTRA_VERSION
-		);*/
-
-	}
-
-	public function enqueue_icons() {
-		wp_enqueue_style(
-			'pepy-elementor-panel-style',
-			PEPY_EXTRA_ASSETS_URL . 'css/editor.css',
-			null,
-			PEPY_EXTRA_VERSION
-		);
-	}
-
 	
-
-
 }
 
 PepyWidgets::instance();
