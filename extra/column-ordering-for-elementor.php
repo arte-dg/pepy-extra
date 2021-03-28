@@ -141,7 +141,7 @@ final class Elementor_Column_Order {
         $message = sprintf(
             /* translators: 1: Plugin name 2: Elementor */
             esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-column-order' ),
-            '<strong>' . esc_html__( 'Elementor Column Order', 'elementor-column-order' ) . '</strong>',
+            '<strong>' . esc_html__( 'pepyExtra', 'elementor-column-order' ) . '</strong>',
             '<strong>' . esc_html__( 'Elementor', 'elementor-column-order' ) . '</strong>'
         );
 
@@ -166,7 +166,7 @@ final class Elementor_Column_Order {
         $message = sprintf(
             /* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
             esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-column-order' ),
-            '<strong>' . esc_html__( 'Elementor Column Order', 'elementor-column-order' ) . '</strong>',
+            '<strong>' . esc_html__( 'pepyExtra', 'elementor-column-order' ) . '</strong>',
             '<strong>' . esc_html__( 'Elementor', 'elementor-column-order' ) . '</strong>',
             self::MINIMUM_ELEMENTOR_VERSION
         );
@@ -192,7 +192,7 @@ final class Elementor_Column_Order {
         $message = sprintf(
             /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
             esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-column-order' ),
-            '<strong>' . esc_html__( 'Elementor Column Order', 'elementor-column-order' ) . '</strong>',
+            '<strong>' . esc_html__( 'pepyExtra', 'elementor-column-order' ) . '</strong>',
             '<strong>' . esc_html__( 'PHP', 'elementor-column-order' ) . '</strong>',
             self::MINIMUM_PHP_VERSION
         );

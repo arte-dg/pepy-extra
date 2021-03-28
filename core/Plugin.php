@@ -48,7 +48,6 @@ class Plugin {
 		require_once PEPY_EXTRA_ENH_PATH . '/TextEditor.php';
 
 		// Extra
-		require_once PEPY_EXTRA_EXTRA_PATH . '/Rotate.php';
 		require_once PEPY_EXTRA_EXTRA_PATH . '/column-ordering-for-elementor.php';
 		
 		add_action( 'admin_footer', function () {} );
