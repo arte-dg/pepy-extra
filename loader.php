@@ -4,7 +4,7 @@
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
  * Plugin URI: https://escolaelementor.com.br/extra
  * Author: Douglas G Alves
- * Version: 0.3.1
+ * Version: 0.4.5
  * Author URI: https://escolaelementor.com.br/douglas
  * Text Domain: pepy-extra
  * Domain Path: /languages
@@ -41,24 +41,3 @@ add_action( 'plugins_loaded', 'pepy_elementor_load_plugin_textdomain' );
 
 // Init plugin
 require_once PEPY_EXTRA_CORE_PATH . 'Plugin.php';
-
-
-// Beta editor de vídeo
-/**
- * Define path
- */
-define( 'VAPFEM_URI_PRO', plugins_url('', __FILE__) );
-define( 'VAPFEM_DIR_PRO', dirname( __FILE__ ) );
-
-/**
- * Include all files
- */
-include_once( PEPY_EXTRA_PATH . '/extra/em-init.php');
-include_once( PEPY_EXTRA_PATH . '/extra/column-ordering-for-elementor.php');
-/**
- * Define text domain path
- */
-function vapfem_load_textdomain() {
-    load_plugin_textdomain( 'vapfem', false, VAPFEM_DIR_PRO . '/languages/' );
-}
-add_action( 'plugins_loaded', 'vapfem_load_textdomain' );

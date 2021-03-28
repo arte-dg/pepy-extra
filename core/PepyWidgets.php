@@ -10,10 +10,10 @@ use Elementor\Widget_Base;
 use Elementor\Plugin;
 
 /**
- * Class StaxWidgets
+ * Class PepyWidgets
  * @package PepyExtra
  */
-class StaxWidgets {
+class PepyWidgets {
 
 	/**
 	 * @var null
@@ -21,7 +21,7 @@ class StaxWidgets {
 	public static $instance;
 
 	/**
-	 * @return StaxWidgets|null
+	 * @return PepyWidgets|null
 	 */
 	public static function instance() {
 		if ( self::$instance === null ) {
@@ -72,11 +72,11 @@ class StaxWidgets {
 		];
 
 
-		$widgets['separator'] = [
-			'scope' => 'VideoPlayer',
-			'name'  => 'Video Player',
-			'slug'  => 'vapfem_video_player'
-			];
+		//$widgets['video-extra'] = [
+		//	'scope' => 'VideoExtra',
+		//	'name'  => 'Video Extra',
+		//	'slug'  => 'pepy-el-video-extra',
+	   	//];
 
 		// Remove disabled widgets
 		if ( $active && ! $withStatus ) {
@@ -188,4 +188,4 @@ class StaxWidgets {
 
 }
 
-StaxWidgets::instance();
+PepyWidgets::instance();

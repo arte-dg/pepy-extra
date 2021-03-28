@@ -44,8 +44,8 @@ class Component extends Base {
 				'type'        => Controls_Manager::TEXT,
 				'description' => __( 'Highlight title words by wrapping them in curly brackets like {{beautiful}}', 'pepy-addons-for-elementor' ),
 				'label_block' => true,
-				'placeholder' => __( 'Tips to {{grow}} your business', 'pepy-addons-for-elementor' ),
-				'default'     => __( 'Tips to {{grow}} your business', 'pepy-addons-for-elementor' ),
+				'placeholder' => __( 'Dicas para {{crescer}} seu negócio', 'pepy-addons-for-elementor' ),
+				'default'     => __( 'Dicas para {{crescer}} seu negócio', 'pepy-addons-for-elementor' ),
 				'dynamic'     => [
 					'active' => true,
 				],

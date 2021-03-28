@@ -35,7 +35,7 @@ class Widgets extends Base {
 
 		$options = [];
 
-		$widgets = StaxWidgets::instance()->get_widgets();
+		$widgets = PepyWidgets::instance()->get_widgets();
 
 		foreach ( $widgets as $widget ) {
 			$valid = false;
@@ -60,7 +60,7 @@ class Widgets extends Base {
 	 */
 	public function panel_content() {
 		Utils::load_template( 'core/admin/pages/templates/widgets', [
-			'widgets' => StaxWidgets::instance()->get_widgets( false, true )
+			'widgets' => PepyWidgets::instance()->get_widgets( false, true )
 		] );
 	}
 

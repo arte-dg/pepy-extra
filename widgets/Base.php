@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 } // Exit if accessed directly
 
 use Elementor\Widget_Base;
-use PepyExtra\StaxWidgets;
+use PepyExtra\PepyWidgets;
 
 /**
  * Class Base
@@ -38,7 +38,7 @@ abstract class Base extends Widget_Base {
 	 * @param array $dependencies
 	 */
 	public function register_widget_resources( $dependencies = [] ) {
-		foreach ( StaxWidgets::instance()->get_widgets( true ) as $folder => $widget ) {
+		foreach ( PepyWidgets::instance()->get_widgets( true ) as $folder => $widget ) {
 			if ( $widget['slug'] === $this->get_name() ) {
 				$suffix = '.min';
 

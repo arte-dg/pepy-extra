@@ -34,14 +34,13 @@ class Plugin {
 	public function __construct() {
 
 		require_once PEPY_EXTRA_CORE_PATH . '/Utils.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/StaxWidgets.php';
+		require_once PEPY_EXTRA_CORE_PATH . '/PepyWidgets.php';
+		require_once PEPY_EXTRA_CORE_PATH . '/admin/Settings.php';
 
 		// Admin pages
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Base.php';
 		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Widgets.php';
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/pages/Modules.php';
-
-		require_once PEPY_EXTRA_CORE_PATH . '/admin/Settings.php';
+	
 
 		// Enhancements
 		require_once PEPY_EXTRA_ENH_PATH . '/Accordion.php';
@@ -50,7 +49,8 @@ class Plugin {
 
 		// Extra
 		require_once PEPY_EXTRA_EXTRA_PATH . '/Rotate.php';
-
+		require_once PEPY_EXTRA_EXTRA_PATH . '/column-ordering-for-elementor.php';
+		
 		add_action( 'admin_footer', function () {} );
 	}
 
