@@ -75,14 +75,9 @@ class PepyWidgets {
 			'scope' => 'ShareButton',
 			'name'  => 'Share Button',
 			'slug'  => 'pepy-el-share-button'
-		];*/
-
-		//$widgets['video-extra'] = [
-		//	'scope' => 'VideoExtra',
-		//	'name'  => 'Video Extra',
-		//	'slug'  => 'pepy-el-video-extra',
-	   	//];
-
+		];
+		*/
+		
 		// Remove disabled widgets
 		if ( $active && ! $withStatus ) {
 			$disabled_widgets = get_option( '_pepy_addons_disabled_widgets', [] );
