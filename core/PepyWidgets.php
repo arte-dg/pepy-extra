@@ -70,7 +70,7 @@ class PepyWidgets {
 			'name'  => 'Scroll Top',
 			'slug'  => 'pepy-el-scroll-top'
 		];
-
+      		
 		/*$widgets['share-button'] = [
 			'scope' => 'ShareButton',
 			'name'  => 'Share Button',

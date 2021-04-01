@@ -20,7 +20,7 @@ class Component extends Base {
 	}
 
 	public function get_title() {
-		return __( 'Name', 'pepy-addons-for-elementor' );
+		return __( 'Name', 'pepy' );
 	}
 
 	public function get_icon() {

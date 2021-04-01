@@ -49,9 +49,8 @@ class Plugin {
 		require_once PEPY_EXTRA_ENH_PATH . '/Helper.php';
 
 		// Extra
-		require_once PEPY_EXTRA_EXTRA_PATH . '/Reading_Progress.php';
 		require_once PEPY_EXTRA_EXTRA_PATH . '/column-ordering-for-elementor.php';
-		
+ 
 		add_action( 'admin_footer', function () {} );
 	}
 
