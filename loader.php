@@ -18,7 +18,6 @@ define( 'PEPY_EXTRA_VERSION', '0.5.1' );
 define( 'PEPY_EXTRA_DOMAIN', 'pepy-extra' );
 define( 'PEPY_EXTRA_HOOK_PREFIX', 'pepy_el_' );
 define( 'PEPY_EXTRA_SLUG_PREFIX', 'pepy-elementor-' );
-
 define( 'PEPY_EXTRA_FILE', __FILE__ );
 define( 'PEPY_EXTRA_PLUGIN_BASE', plugin_basename( PEPY_EXTRA_FILE ) );
 define( 'PEPY_EXTRA_PATH', plugin_dir_path( PEPY_EXTRA_FILE ) );
@@ -41,3 +40,11 @@ add_action( 'plugins_loaded', 'pepy_elementor_load_plugin_textdomain' );
 
 // Init plugin
 require_once PEPY_EXTRA_CORE_PATH . 'Plugin.php';
+
+
+/* funções de depencias exclusivas para widgets 
+
+function elemenda_get_all_elements(){
+	require_once PEPY_EXTRA_PATH . 'elements.php';
+	return elemenda_all_elements();
+}*/

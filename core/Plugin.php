@@ -50,7 +50,7 @@ class Plugin {
 
 		// Extra
 		require_once PEPY_EXTRA_EXTRA_PATH . '/column-ordering-for-elementor.php';
- 
+        require_once PEPY_EXTRA_EXTRA_PATH . '/make-column-clickable/make-column-clickable-elementor.php';
 		add_action( 'admin_footer', function () {} );
 	}
 
