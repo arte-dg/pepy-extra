@@ -70,8 +70,39 @@ class PepyWidgets {
 			'name'  => 'Scroll Top',
 			'slug'  => 'pepy-el-scroll-top'
 		];
+
+		$widgets['reading-progress'] = [
+			'scope' => 'ReadingProgress',
+			'name'  => 'Reading Progress',
+			'slug'  => 'pepy-el-reading-progress'
+		];
+
+		$widgets['glassy-columns'] = [
+			'scope' => 'GlassyColumns',
+			'name'  => 'Glassy Columns',
+			'slug'  => 'pepy-el-glassy-columns'
+		];
+		/*
+		$widgets['sales-pop'] = [
+			'scope' => 'SalesPop',
+			'name'  => 'Sales Pop',
+			'slug'  => 'pepy-el-sales-pop'
+		];		
+
+		$widgets['Darkmode'] = [
+			'scope' => 'Darkmode',
+			'name'  => 'Darkmode',
+			'slug'  => 'pepy-el-darkmode'
+		];
+		
+		$widgets['video-extra'] = [
+			'scope' => 'VideoExtra',
+			'name'  => 'Video Extra',
+			'slug'  => 'pepy-el-video-extra'
+		];
+		   
 		    	
-		/*$widgets['share-button'] = [
+		$widgets['share-button'] = [
 			'scope' => 'ShareButton',
 			'name'  => 'Share Button',
 			'slug'  => 'pepy-el-share-button'

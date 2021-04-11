@@ -1,0 +1,43 @@
+.stx-btn-wrapper .stx-btn {
+  display: inline-block;
+  background-color: #5cb85c;
+  color: #fff;
+  fill: #fff;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: auto;
+  border: 0;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible; }
+  .stx-btn-wrapper .stx-btn.stx-btn-hidden {
+    visibility: hidden;
+    opacity: 0; }
+  .stx-btn-wrapper .stx-btn:hover, .stx-btn-wrapper .stx-btn:visited, .stx-btn-wrapper .stx-btn:focus {
+    color: #fff; }
+  .stx-btn-wrapper .stx-btn .stx-btn-content-wrapper {
+    display: flex;
+    justify-content: center; }
+    .stx-btn-wrapper .stx-btn .stx-btn-content-wrapper .stx-btn-icon {
+      flex-grow: 0; }
+  .stx-btn-wrapper .stx-btn.stx-btn-xs {
+    font-size: 13px;
+    padding: 10px 20px; }
+  .stx-btn-wrapper .stx-btn.stx-btn-sm {
+    font-size: 15px;
+    padding: 12px 24px; }
+  .stx-btn-wrapper .stx-btn.stx-btn-md {
+    font-size: 16px;
+    padding: 15px 30px; }
+  .stx-btn-wrapper .stx-btn.stx-btn-lg {
+    font-size: 18px;
+    padding: 20px 40px; }
+  .stx-btn-wrapper .stx-btn.stx-btn-xl {
+    font-size: 20px;
+    padding: 25px 50px; }
+
+.elementor-editor-active .stx-btn.stx-btn-hidden {
+  visibility: visible !important;
+  opacity: 1 !important; }

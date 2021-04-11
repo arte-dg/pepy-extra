@@ -4,7 +4,7 @@
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
  * Plugin URI: https://escolaelementor.com.br/extra
  * Author: Douglas G Alves
- * Version: 0.5.1
+ * Version: 0.6.0
  * Author URI: https://escolaelementor.com.br/douglas
  * Text Domain: pepy-extra
  * Domain Path: /languages
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'PEPY_EXTRA_VERSION', '0.5.1' );
+define( 'PEPY_EXTRA_VERSION', '0.6.0' );
 define( 'PEPY_EXTRA_DOMAIN', 'pepy-extra' );
 define( 'PEPY_EXTRA_HOOK_PREFIX', 'pepy_el_' );
 define( 'PEPY_EXTRA_SLUG_PREFIX', 'pepy-elementor-' );
@@ -29,6 +29,7 @@ define( 'PEPY_EXTRA_EXTRA_PATH', PEPY_EXTRA_PATH . 'extra/' );
 define( 'PEPY_EXTRA_WIDGET_URL', PEPY_EXTRA_URL . 'widgets/' );
 define( 'PEPY_EXTRA_ASSETS_URL', PEPY_EXTRA_URL . 'assets/' );
 
+
 /*
  * Localization
  */
@@ -41,10 +42,3 @@ add_action( 'plugins_loaded', 'pepy_elementor_load_plugin_textdomain' );
 // Init plugin
 require_once PEPY_EXTRA_CORE_PATH . 'Plugin.php';
 
-
-/* funções de depencias exclusivas para widgets 
-
-function elemenda_get_all_elements(){
-	require_once PEPY_EXTRA_PATH . 'elements.php';
-	return elemenda_all_elements();
-}*/
