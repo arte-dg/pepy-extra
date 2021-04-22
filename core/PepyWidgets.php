@@ -82,13 +82,14 @@ class PepyWidgets {
 			'name'  => 'Glassy Columns',
 			'slug'  => 'pepy-el-glassy-columns'
 		];
+		
 		/*
 		$widgets['sales-pop'] = [
 			'scope' => 'SalesPop',
 			'name'  => 'Sales Pop',
 			'slug'  => 'pepy-el-sales-pop'
 		];		
-
+		
 		$widgets['Darkmode'] = [
 			'scope' => 'Darkmode',
 			'name'  => 'Darkmode',

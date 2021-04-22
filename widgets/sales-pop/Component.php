@@ -16,28 +16,27 @@ use PepyExtra\Widgets\Base;
 class Component extends Base {
 
 	public function get_name() {
-		return 'pepy-el-sales-pop';
+		return 'pepy-el-sales-pop';		
 	}
 
 	public function get_title() {
-		return __( 'Sales Pop', 'pafe' );
+		return __( 'Sales Pop', 'pepy-addons-for-elementor' );
 	}
 
 	public function get_icon() {
 		return 'eicon-testimonial';
-    
 	}
 protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_section',
 				[
-					'label' => __( 'Settings', 'pafe' ),
+					'label' => __( 'Settings', 'pepy-addons-for-elementor' ),
 				]
 			);
 			$this->add_control(
 				'pafe_sales_pop_time',
 				[
-					'label' => __( 'Time (s)', 'pafe' ),
+					'label' => __( 'Time (s)', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '2',
 				]
@@ -46,14 +45,14 @@ protected function _register_controls() {
 			$repeater->add_control(
 				'pafe_sales_pop_image', 
 				[
-					'label' => __( 'Choose Image', 'pafe' ),
+					'label' => __( 'Choose Image', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::MEDIA,
 				]
 			); 
 			$repeater->add_control(
 				'pafe_sales_pop_item_title',
 				[
-					'label' => __( 'Title', 'pafe' ),
+					'label' => __( 'Title', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
 					'dynamic' => [
 						'active' => true,
@@ -63,8 +62,8 @@ protected function _register_controls() {
 			$repeater->add_control(
 				'pafe_sales_pop_item_time',
 				[
-					'label' => __( 'Time', 'pafe' ),
-					'description' => __( 'E.g: 10 hours ago', 'pafe' ),
+					'label' => __( 'Time', 'pepy-addons-for-elementor' ),
+					'description' => __( 'E.g: 10 hours ago', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::TEXT,
 					'dynamic' => [
 						'active' => true,
@@ -74,7 +73,7 @@ protected function _register_controls() {
 			$repeater->add_control(
 				'pafe_sales_pop_item_wysiwyg',
 				[ 
-					'label' => __( 'Description','pafe' ),
+					'label' => __( 'Description','pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::WYSIWYG,
 				]
 			);
@@ -91,13 +90,13 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_random_section',
 				[
-					'label' => __( 'Random', 'pafe' ),
+					'label' => __( 'Random', 'pepy-addons-for-elementor' ),
 				]
 			);
 			$this->add_control(
 				'pafe_sales_pop_random',
 				[
-					'label' => __( 'Enable Random', 'pafe' ),
+					'label' => __( 'Enable Random', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::SWITCHER,
 					'default' => 'label_on',
 					'label_on' => 'Yes',
@@ -108,7 +107,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_min_time',
 				[
-					'label' => __( 'Min Time (s)', 'pafe' ),
+					'label' => __( 'Min Time (s)', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '1',
 					'condition' => [
@@ -119,7 +118,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_max_time',
 				[
-					'label' => __( 'Max Time (s)', 'pafe' ),
+					'label' => __( 'Max Time (s)', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '5',
 					'condition' => [
@@ -131,7 +130,7 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_section_style_section',
 				[
-					'label' => __( 'Item', 'pafe' ),
+					'label' => __( 'Item', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -140,13 +139,13 @@ protected function _register_controls() {
 	            [
 	                'name' => 'pafe_sales_pop_background',
 	                'selector' => '{{WRAPPER}} .pafe-sales-pop-item',
-	                'label' => __( 'Background', 'pafe' ),
+	                'label' => __( 'Background', 'pepy-addons-for-elementor' ),
 	            ]
 	        );
 	        $this->add_control(
 				'pafe_sales_pop_space',
 				[
-					'label' => __( 'Spacing', 'pafe' ),
+					'label' => __( 'Spacing', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '15',
 					'selectors' => [
@@ -157,7 +156,7 @@ protected function _register_controls() {
 			$this->add_responsive_control(
 				'pafe_sales_pop_item_width',
 				[
-					'label' => __( 'Width', 'pafe' ),
+					'label' => __( 'Width', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px','%' ],
 					'range' => [
@@ -184,7 +183,7 @@ protected function _register_controls() {
 			$this->add_responsive_control(
 				'pafe_sales_pop_border_radius',
 				[
-					'label' => __( 'Border Radius', 'pafe' ),
+					'label' => __( 'Border Radius', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -195,7 +194,7 @@ protected function _register_controls() {
 			$this->add_responsive_control( 
 				'pafe_sales_pop_padding',
 				[
-					'label' => __( 'Padding', 'pafe' ),
+					'label' => __( 'Padding', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'selectors' => [
@@ -207,7 +206,7 @@ protected function _register_controls() {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'pafe_sales_pop_border',
-					'label' => __( 'Border', 'pafe' ),
+					'label' => __( 'Border', 'pepy-addons-for-elementor' ),
 					'selector' => '{{WRAPPER}} .pafe-sales-pop-item',
 				]
 			);
@@ -215,14 +214,14 @@ protected function _register_controls() {
 				\Elementor\Group_Control_Box_Shadow::get_type(),
 				[
 					'name' => 'pafe_sales_pop_box_shadow',
-					'label' => __( 'Box Shadow', 'pafe' ),
+					'label' => __( 'Box Shadow', 'pepy-addons-for-elementor' ),
 					'selector' => '{{WRAPPER}} .pafe-sales-pop-item',
 				]
 			);
 			$this->add_control(
 				'pafe_sales_pop_zindex',
 				[
-					'label' => __( 'Z-index', 'pafe' ),
+					'label' => __( 'Z-index', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '99',
 					'selectors' => [
@@ -235,14 +234,14 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_position_section',
 				[
-					'label' => __( 'Position', 'pafe' ),
+					'label' => __( 'Position', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 			$this->add_control(
 				'pafe_sales_pop_position_top',
 				[
-					'label' => __( 'Top', 'pafe' ),
+					'label' => __( 'Top', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '',
 					'selectors' => [
@@ -253,7 +252,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_position_bottom',
 				[
-					'label' => __( 'Bottom', 'pafe' ),
+					'label' => __( 'Bottom', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '15',
 					'selectors' => [
@@ -264,7 +263,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_position_left',
 				[
-					'label' => __( 'Left', 'pafe' ),
+					'label' => __( 'Left', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '15',
 					'selectors' => [
@@ -275,7 +274,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_position_right',
 				[
-					'label' => __( 'Right', 'pafe' ),
+					'label' => __( 'Right', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '',
 					'selectors' => [
@@ -287,7 +286,7 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_time_style',
 				[
-					'label' => __( 'Time', 'pafe' ),
+					'label' => __( 'Time', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -302,7 +301,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_time_color', 
 				[ 
-					'label' => __( 'Color', 'pafe' ), 
+					'label' => __( 'Color', 'pepy-addons-for-elementor' ), 
 					'type' => \Elementor\Controls_Manager::COLOR, 
 					'scheme' => [
 						'type' => \Elementor\Scheme_Color::get_type(),
@@ -319,7 +318,7 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_title_style_section',
 				[
-					'label' => __( 'Title', 'pafe' ),
+					'label' => __( 'Title', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -334,7 +333,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_color', 
 				[ 
-					'label' => __( 'Color', 'pafe' ), 
+					'label' => __( 'Color', 'pepy-addons-for-elementor' ), 
 					'type' => \Elementor\Controls_Manager::COLOR, 
 					'scheme' => [
 						'type' => \Elementor\Scheme_Color::get_type(),
@@ -350,7 +349,7 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_description_style_section',
 				[
-					'label' => __( 'Description', 'pafe' ),
+					'label' => __( 'Description', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -366,7 +365,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_description_color', 
 				[ 
-					'label' => __( 'Color', 'pafe' ), 
+					'label' => __( 'Color', 'pepy-addons-for-elementor' ), 
 					'type' => \Elementor\Controls_Manager::COLOR, 
 					'scheme' => [
 						'type' => \Elementor\Scheme_Color::get_type(),
@@ -383,14 +382,14 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_close_button_style_section',
 				[
-					'label' => __( 'Close Button', 'pafe' ),
+					'label' => __( 'Close Button', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
 			$this->add_control(
 				'pafe_sales_pop_close_button_color', 
 				[ 
-					'label' => __( 'Color', 'pafe' ), 
+					'label' => __( 'Color', 'pepy-addons-for-elementor' ), 
 					'type' => \Elementor\Controls_Manager::COLOR, 
 					'scheme' => [
 						'type' => \Elementor\Scheme_Color::get_type(),
@@ -405,7 +404,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_close_button_size',
 				[
-					'label' => __( 'Size', 'pafe' ),
+					'label' => __( 'Size', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '15',
 					'selectors' => [
@@ -417,7 +416,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_close_button_position_top',
 				[
-					'label' => __( 'Top', 'pafe' ),
+					'label' => __( 'Top', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '5',
 					'selectors' => [
@@ -428,7 +427,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_close_button_position_bottom',
 				[
-					'label' => __( 'Bottom', 'pafe' ),
+					'label' => __( 'Bottom', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '',
 					'selectors' => [
@@ -439,7 +438,7 @@ protected function _register_controls() {
 			$this->add_control(
 				'pafe_sales_pop_close_button_position_left',
 				[
-					'label' => __( 'Left', 'pafe' ),
+					'label' => __( 'Left', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '',
 					'selectors' => [
@@ -450,7 +449,7 @@ protected function _register_controls() {
 			$this->add_control( 
 				'pafe_sales_pop_close_button_position_right',
 				[
-					'label' => __( 'Right', 'pafe' ),
+					'label' => __( 'Right', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::NUMBER,
 					'default' => '7',
 					'selectors' => [
@@ -463,7 +462,7 @@ protected function _register_controls() {
 			$this->start_controls_section(
 				'pafe_sales_pop_image_style_section',
 				[
-					'label' => __( 'Image', 'pafe' ),
+					'label' => __( 'Image', 'pepy-addons-for-elementor' ),
 					'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 				]
 			);
@@ -471,14 +470,14 @@ protected function _register_controls() {
 				\Elementor\Group_Control_Border::get_type(),
 				[
 					'name' => 'pafe_sales_pop_image_border',
-					'label' => __( 'Border', 'pafe' ),
+					'label' => __( 'Border', 'pepy-addons-for-elementor' ),
 					'selector' => '{{WRAPPER}} .pafe-sales-pop-item__image',
 				]
 			);
 			$this->add_responsive_control(
 				'pafe_sales_pop_image_border_radius',
 				[
-					'label' => __( 'Image Border Radius', 'pafe' ),
+					'label' => __( 'Image Border Radius', 'pepy-addons-for-elementor' ),
 					'type' => \Elementor\Controls_Manager::SLIDER,
 					'size_units' => [ 'px' ],
 					'range' => [

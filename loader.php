@@ -2,10 +2,10 @@
 /**
  * Plugin Name: pepyExtra
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
- * Plugin URI: https://escolaelementor.com.br/extra
+ * Plugin URI: https://pepy.link/extra
  * Author: Douglas G Alves
- * Version: 0.6.0
- * Author URI: https://escolaelementor.com.br/douglas
+ * Version: 0.7
+ * Author URI: https://douglasgaspar.com/
  * Text Domain: pepy-extra
  * Domain Path: /languages
  */
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'PEPY_EXTRA_VERSION', '0.6.0' );
+define( 'PEPY_EXTRA_VERSION', '0.7' );
 define( 'PEPY_EXTRA_DOMAIN', 'pepy-extra' );
 define( 'PEPY_EXTRA_HOOK_PREFIX', 'pepy_el_' );
 define( 'PEPY_EXTRA_SLUG_PREFIX', 'pepy-elementor-' );
