@@ -37,7 +37,7 @@ class PepyWidgets {
 	public function __construct() {
 		add_action( 'elementor/elements/categories_registered', [ $this, 'register_elementor_category' ] );
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'register_widgets' ] );
-		add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'editor_css' ] );
+		//add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'editor_css' ] );
 	}
 
 	/**

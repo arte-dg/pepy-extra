@@ -33,6 +33,7 @@ define( 'PEPY_EXTRA_ASSETS_URL', PEPY_EXTRA_URL . 'assets/' );
 /*
  * Localization
  */
+
 function pepy_elementor_load_plugin_textdomain() {
 	load_plugin_textdomain( 'pepy-addons-for-elementor', false, basename( __DIR__ ) . '/languages/' );
 }

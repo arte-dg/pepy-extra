@@ -30,4 +30,13 @@
             </button>
         </div>
     </form>
+     <div class="ste-mt-5">
+            <button type="submit"
+                    class="ste-bg-green-500 ste-text-md ste-text-white ste-py-2 ste-pl-4 ste-pr-6 ste-rounded ste-border-0 ste-shadow-xl hover:ste-shadow-lg ste-cursor-pointer ste-uppercase">
+                <span class="ste-flex ste-items-center">
+                    <a href="https://lucrapages.com/suporte/" target='_blank' style='color: #ffffff;
+    font-weight: 800; font-size: 16px;'> Suporte </a></span>
+                </span>
+            </button>
+        </div>
 </div>
