@@ -76,14 +76,14 @@ class PepyWidgets {
 			'name'  => 'Reading Progress',
 			'slug'  => 'pepy-el-reading-progress'
 		];
-
+		
+		/*
 		$widgets['glassy-columns'] = [
 			'scope' => 'GlassyColumns',
 			'name'  => 'Glassy Columns',
 			'slug'  => 'pepy-el-glassy-columns'
 		];
 		
-		/*
 		$widgets['sales-pop'] = [
 			'scope' => 'SalesPop',
 			'name'  => 'Sales Pop',

@@ -4,7 +4,7 @@
  * Description: Elementos Complementares ao ElementorPRO para otimizar as conversões de suas páginas
  * Plugin URI: https://pepy.link/extra
  * Author: Douglas G Alves
- * Version: 0.7
+ * Version: 0.8
  * Author URI: https://douglasgaspar.com/
  * Text Domain: pepy-extra
  * Domain Path: /languages
@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'PEPY_EXTRA_VERSION', '0.7' );
+define( 'PEPY_EXTRA_VERSION', '0.8' );
 define( 'PEPY_EXTRA_DOMAIN', 'pepy-extra' );
 define( 'PEPY_EXTRA_HOOK_PREFIX', 'pepy_el_' );
 define( 'PEPY_EXTRA_SLUG_PREFIX', 'pepy-elementor-' );
